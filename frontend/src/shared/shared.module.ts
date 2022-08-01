@@ -10,7 +10,7 @@ import { LoadingComponent } from './components/loading-component/loading.compone
         RouterModule,
         FormsModule,
         ReactiveFormsModule,
-        RouterModule
+        RouterModule,
     ],
     declarations: [
         LoadingComponent,
@@ -22,6 +22,6 @@ import { LoadingComponent } from './components/loading-component/loading.compone
         ReactiveFormsModule,
         RouterModule,
         LoadingComponent,        
-    ]
+    ],
 })
 export class SharedModule { } 

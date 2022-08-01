@@ -11,7 +11,7 @@ export class ErrorInterceptor implements HttpInterceptor {
     handleError(error: HttpErrorResponse): Observable<never> {
         return throwError(() => new Error(error.message ?? 'Something went wrong'));
     }
-    intercept(req: HttpRequest<unknown>, next: HttpHandler): Observable<HttpEvent<any>> {
+    intercept(req: HttpRequest<unknown>, next: HttpHandler): Observable<HttpEvent<unknown>> {
         return next.handle(req).pipe(catchError(this.handleError));
     }
 } 
