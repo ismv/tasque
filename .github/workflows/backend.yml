@@ -7,8 +7,10 @@ on:
     branches: [ "main", "develop" ]
 
 jobs:
-  build:
-
+  backend-build:
+    defaults:
+      run:
+        working-directory: backend
     runs-on: ubuntu-latest
 
     steps:
